@@ -14,6 +14,40 @@ backButton.addEventListener("click", minusCount);
 frontButton.addEventListener("click", addCount);
 stopButton.addEventListener("click", goToIndex);
 
+
+
+
+	document.onkeydown = function(e) {
+		console.log("key pressed")
+		e = e || window.event;
+	
+		if (e.keyCode == "37") {
+			// left arrow
+			minusCount();
+		} else if (e.keyCode == "39") {
+			// right arrow
+			addCount();
+		} else if (e.keyCode == "27") {
+			// escape key
+			goToIndex();
+		}
+	};
+
+// function(e) {
+// 	console.log("key pressed")
+// 	e = e || window.event;
+
+// 	if (e.keyCode == "37") {
+// 		// left arrow
+// 		minusCount()
+// 	} else if (e.keyCode == "49") {
+// 		// right arrow
+// 		addCount()
+// 	} else if (e.keyCode == "27"){
+// 		goToIndex()
+// 	}
+// }
+
 function goToIndex() {
 	window.location.href = "/";
 }

@@ -23,6 +23,13 @@ nav {
 	align-items: center;
 	margin: 0 1em;
 	text-align: center;
+	cursor: pointer;
+	transition: 200ms color ease-out;
+}
+
+.start:hover{
+	color: #6f6363;
+
 }
 
 .mobileData {

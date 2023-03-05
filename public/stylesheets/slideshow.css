@@ -21,8 +21,14 @@ nav {
 	text-transform: uppercase;
 	color: #a7a7a7;
 	align-items: center;
+	cursor: pointer;
+	transition: 200ms color ease-out;
 }
 
+.stop:hover{
+	color: #6f6363;
+
+}
 body {
 	min-height: 100vh;
 	display: flex;
